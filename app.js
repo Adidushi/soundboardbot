@@ -25,10 +25,6 @@ client.on('message', message => {
 
   let arg = message.content.split(" ").slice(1); //makes args
 
-  if (message.content === 'same') {
-    message.channel.send('smae');
-  } else
-
   if (command === "board") {
     if (message.member.voiceChannel) {
       message.member.voiceChannel.join()
